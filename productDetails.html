@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/productDetails.css" />
+
+    <title>Karma</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="index.html"><img src="assets/images/logo.png.webp" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="home nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shopCategory.html">Shop Category</a></li>
+                                <li><a class="dropdown-item" href="productDetails.html">Product Details</a></li>
+                                <li><a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blogDetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="full">
+        <main>
+            <main>
+                <section id="bg">
+                    <div class="banner_txt">
+                        <h1>Product Details Page</h1>
+                        <a href="index.html">Home</a> - <a href="">Shop</a> -
+                        <a href="#">Product Details</a>
+                    </div>
+                </section>
+
+                <section id="details">
+                    <div class="container">
+                        <div class="details">
+                            <div class="img">
+                                <img src="assets/images/s-p1.jpg.webp" alt="">
+                            </div>
+                            <div class="text">
+                                <h2>Faded SkyBlu Denim Jeans</h2>
+                                <p class="price">$149.99</p>
+                                <span>Category</span>
+                                <span class="house-hold">: Household</span> <br />
+                                <span>Availibility</span>
+                                <span class="stock"> : In Stock</span>
+
+                                <div class="txt">
+                                    <p>Mill Oil is an innovative oil filled radiator with the most modern technology. If
+                                        you are looking for something that can make your interior look awesome, and at
+                                        the same time give you the pleasant warm feeling during the winter. </p>
+                                </div>
+
+                                <label>Quantity: <input type="number"></label>
+                                <div class="button">
+                                    <button>ADD TO CART</button>
+                                    <i class="diamond fa-regular fa-gem"></i>
+                                    <i class="heart fa-regular fa-heart"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="tab">
+                    <div class="container">
+                        <div class="tab">
+                            <div class="buttons">
+                                <button>Description</button>
+                                <button>Specification</button>
+                                <button>Comments</button>
+                                <button class="activee">Reviews</button>
+                            </div>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-list">
+                                <div class="score">
+                                    <div class="score-box">
+                                        <p>Overall</p>
+                                        <h2>4.0</h2>
+                                        <span>(03 reviews)</span>
+                                    </div>
+                                    <div class="star">
+                                        <h3>Based on 3 Reviews</h3>
+                                        <div class="star-box">
+                                            <span>5 star</span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>01</span>
+                                        </div>
+                                        <div class="star-box">
+                                            <span>4 star</span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>01</span>
+                                        </div>
+                                        <div class="star-box">
+                                            <span>3 star</span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>01</span>
+                                        </div>
+                                        <div class="star-box">
+                                            <span>2 star</span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>01</span>
+                                        </div>
+                                        <div class="star-box">
+                                            <span>1 star</span>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <span>01</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="comments">
+                                    <div class="profile">
+                                        <img src="assets/images/review-1.png.webp" alt="">
+                                        <div class="star-name">
+                                            <p>Blake Ruiz</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                </div>
+
+                                <div class="comments">
+                                    <div class="profile">
+                                        <img src="assets/images/review-2.png.webp" alt="">
+                                        <div class="star-name">
+                                            <p>Blake Ruiz</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                </div>
+                                <div class="comments">
+                                    <div class="profile">
+                                        <img src="assets/images/review-3.png.webp" alt="">
+                                        <div class="star-name">
+                                            <p>Blake Ruiz</p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                                </div>
+                            </div>
+
+                            <div class="add-review">
+                                <h3>Add a Review</h3>
+                                <p>Your Rating:
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    Outstanding
+                                </p>
+                                <div class="inputs">
+                                    <input type="text" placeholder="Your full name">
+                                    <input type="email" placeholder="Email address">
+                                    <input type="tel" placeholder="Phone number">
+                                    <textarea placeholder="Review" rows="5"></textarea>
+                                    <div class="submit">
+                                        <button>SUBMIT NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="deals">
+                    <div class="container">
+                        <div class="deals-title">
+                            <h1>Deals of the Week</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br />
+                                incididunt
+                                ut labore et dolore magna aliqua. </p>
+                        </div>
+
+                        <div class="deals">
+                            <div class="deals-card">
+                                <img src="assets/images/r1.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r2.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r3.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/c5.jpg (1).webp" alt="">
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r5.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r6.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r7.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r9.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r10.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                            <div class="deals-card">
+                                <img src="assets/images/r11.jpg.webp" alt="">
+                                <div class="title-price">
+                                    <h4>Black lace Heels</h4>
+                                    <span>$189.00</span>
+                                    <span class="old"> $210.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="container">
+                    <div class="footer">
+                        <div class="about">
+                            <h4>About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore dolore magna aliqua.</p>
+                        </div>
+                        <div class="news">
+                            <h4>Newsletter</h4>
+                            <p>Stay update with our latest</p>
+                            <div class="input">
+                                <input type="email" placeholder="Enter Email">
+                                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                        <div class="instagram">
+                            <h4>Instragram Feed </h4>
+                            <div class="insta-img">
+                                <img src="assets/images/i1.jpg.webp" alt="">
+                                <img src="assets/images/i2.jpg.webp" alt="">
+                                <img src="assets/images/i3.jpg.webp" alt="">
+                                <img src="assets/images/i4.jpg.webp" alt="">
+                                <img src="assets/images/i5.jpg.webp" alt="">
+                                <img src="assets/images/i6.jpg.webp" alt="">
+                                <img src="assets/images/i7.jpg.webp" alt="">
+                                <img src="assets/images/i8.jpg.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="follow">
+                            <h4>Follow Us </h4>
+                            <p>Let us be social</p>
+                            <div class="social">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-dribbble"></i>
+                                <i class="fa-brands fa-behance"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="copyright">Copyright ©2024 All rights reserved | This template is made with by <span
+                            style="color: #ffba00;">Colorlib</span></p>
+                </div>
+            </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

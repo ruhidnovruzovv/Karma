@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/shopCategory.css" />
+
+    <title>Karma</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="index.html"><img src="assets/images/logo.png.webp" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="home nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shop Category</a></li>
+                                <li><a class="dropdown-item" href="productDetails.html">Product Details</a></li>
+                                <li><a class="dropdown-item" href="shoppingCart.html">Shopping Cart</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blogDetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="register.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="full">
+        <main>
+            <section id="bg">
+                <div class="banner_txt">
+                    <h1>Shop Category page</h1>
+                    <a href="index.html">Home</a> - <a href="">Shop</a> -
+                    <a href="#">Fashon Categor</a>
+                </div>
+            </section>
+
+            <section id="main">
+                <div class="container">
+                    <div class="sidebar">
+                        <div class="title-category">
+                            <h3>Browse Categories</h3>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Fruits and Vegetables
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Meat and Fish
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Cooking
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        Beverages
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        Home and Cleaning
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Pest Control
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSeven" aria-expanded="false"
+                                        aria-controls="collapseSeven">
+                                        Office Products
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEight">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEight" aria-expanded="false"
+                                        aria-controls="collapseEight">
+                                        Beauty Products
+                                    </button>
+                                </h2>
+                                <div id="collapseEight" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNine" aria-expanded="false"
+                                        aria-controls="collapseNine">
+                                        Health Products
+                                    </button>
+                                </h2>
+                                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                        Pet Care
+                                    </button>
+                                </h2>
+                                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEleven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseEleven" aria-expanded="false"
+                                        aria-controls="collapseEleven">
+                                        Home Appliances
+                                    </button>
+                                </h2>
+                                <div id="collapseEleven" class="accordion-collapse collapse"
+                                    aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwelve">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwelve" aria-expanded="false"
+                                        aria-controls="collapseTwelve">
+                                        Baby Care
+                                    </button>
+                                </h2>
+                                <div id="collapseTwelve" class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><a href="#">Frozen Fish (13)</a></li>
+                                            <li><a href="#">Dried Fish (09)</a></li>
+                                            <li><a href="#">Fresh Fish (17)</a></li>
+                                            <li><a href="#">Meat Alternatives (01)</a></li>
+                                            <li><a href="#">Meat (11)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-filters">
+                            <div class="title-category">
+                                <h3>Product Filters</h3>
+                            </div>
+
+                            <div class="brands">
+                                <h4>Brands</h4>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="apple"> <label for="apple">Apple(29)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="asus"> <label for="asus">Asus(29)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="gionee"> <label
+                                        for="gionee">Gionee(19)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="micromax"> <label
+                                        for="micromax">Micromax(19)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="samsung"> <label
+                                        for="samsung">Samsung(19)</label>
+                                </div>
+                            </div>
+
+                            <div class="colors">
+                                <h4>Brands</h4>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="apple"> <label for="apple">Black(29)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="asus"> <label for="asus">Black
+                                        Leather(29)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="gionee"> <label for="gionee">Black with
+                                        red(19)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="micromax"> <label
+                                        for="micromax">Gold(19)</label>
+                                </div>
+                                <div class="radio">
+                                    <input type="radio" name="brands" id="samsung"> <label
+                                        for="samsung">Spacegrey(19)</label>
+                                </div>
+                            </div>
+
+                            <div class="price-sidebar">
+                                <h4>Price</h4>
+                                <span>Price:</span>
+                                <span class="low">$500.00 to</span>
+                                <span class="high">$4000.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="main-content">
+                        <div class="sorting">
+                            <div>
+                                <select>
+                                    <option>Default sorting</option>
+                                </select>
+                                <select>
+                                    <option>Show 12</option>
+                                </select>
+                            </div>
+                            <div class="pagination">
+                                <button><i class="fa-solid fa-arrow-left-long"></i></button>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>...</button>
+                                <button>6</button>
+                                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="product-grid">
+                            <div class="product-card">
+                                <img src="assets/images/p1.jpg.webp" alt="Shoe 1" />
+                                <h4>addidas New Hammer sole for Sports person</h4>
+                                <div class="price">
+                                    <span>$150.00</span> <span class="old">$210.00</span>
+                                </div>
+                                <div class="icon_container">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        <span class="tooltip">ADD TO BAG</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="tooltip">WISHLIST</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <span class="tooltip">COMPARE</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                        <span class="tooltip">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/images/p2.jpg.webp" alt="Shoe 1" />
+                                <h4>addidas New Hammer sole for Sports person</h4>
+                                <div class="price">
+                                    <span>$150.00</span> <span class="old">$210.00</span>
+                                </div>
+                                <div class="icon_container">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        <span class="tooltip">ADD TO BAG</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="tooltip">WISHLIST</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <span class="tooltip">COMPARE</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                        <span class="tooltip">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/images/p3.jpg.webp" alt="Shoe 1" />
+                                <h4>addidas New Hammer sole for Sports person</h4>
+                                <div class="price">
+                                    <span>$150.00</span> <span class="old">$210.00</span>
+                                </div>
+                                <div class="icon_container">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        <span class="tooltip">ADD TO BAG</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="tooltip">WISHLIST</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <span class="tooltip">COMPARE</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                        <span class="tooltip">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/images/p4.jpg.webp" alt="Shoe 1" />
+                                <h4>addidas New Hammer sole for Sports person</h4>
+                                <div class="price">
+                                    <span>$150.00</span> <span class="old">$210.00</span>
+                                </div>
+                                <div class="icon_container">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        <span class="tooltip">ADD TO BAG</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="tooltip">WISHLIST</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <span class="tooltip">COMPARE</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                        <span class="tooltip">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/images/p5.jpg.webp" alt="Shoe 1" />
+                                <h4>addidas New Hammer sole for Sports person</h4>
+                                <div class="price">
+                                    <span>$150.00</span> <span class="old">$210.00</span>
+                                </div>
+                                <div class="icon_container">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        <span class="tooltip">ADD TO BAG</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="tooltip">WISHLIST</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <span class="tooltip">COMPARE</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                        <span class="tooltip">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-card">
+                                <img src="assets/images/p6.jpg.webp" alt="Shoe 1" />
+                                <h4>addidas New Hammer sole for Sports person</h4>
+                                <div class="price">
+                                    <span>$150.00</span> <span class="old">$210.00</span>
+                                </div>
+                                <div class="icon_container">
+                                    <div class="icons">
+                                        <i class="fa-solid fa-basket-shopping"></i>
+                                        <span class="tooltip">ADD TO BAG</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-heart"></i>
+                                        <span class="tooltip">WISHLIST</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                        <span class="tooltip">COMPARE</span>
+                                    </div>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                                        <span class="tooltip">VIEW MORE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sorting">
+                            <div>
+                                <select>
+                                    <option>Show 12</option>
+                                </select>
+                            </div>
+                            <div class="pagination">
+                                <button><i class="fa-solid fa-arrow-left-long"></i></button>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>...</button>
+                                <button>6</button>
+                                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+            </section>
+
+            <section id="deals">
+                <div class="deals-title">
+                    <h1>Deals of the Week</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br /> incididunt
+                        ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="container1">
+                    <div class="deals">
+                        <div class="deals-card">
+                            <img src="assets/images/r1.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r2.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r3.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/c5.jpg (1).webp" alt="">
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r5.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r6.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r7.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r9.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r10.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                        <div class="deals-card">
+                            <img src="assets/images/r11.jpg.webp" alt="">
+                            <div class="title-price">
+                                <h4>Black lace Heels</h4>
+                                <span>$189.00</span>
+                                <span class="old"> $210.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="container2">
+          <div class="footer">
+            <div class="about">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+            </div>
+            <div class="news">
+              <h4>Newsletter</h4>
+              <p>Stay update with our latest</p>
+              <div class="input">
+                <input type="email" placeholder="Enter Email">
+                <button><i class="fa-solid fa-arrow-right-long"></i></button>
+              </div>
+            </div>
+            <div class="instagram">
+              <h4>Instragram Feed </h4>
+              <div class="insta-img">
+                <img src="assets/images/i1.jpg.webp" alt="">
+                <img src="assets/images/i2.jpg.webp" alt="">
+                <img src="assets/images/i3.jpg.webp" alt="">
+                <img src="assets/images/i4.jpg.webp" alt="">
+                <img src="assets/images/i5.jpg.webp" alt="">
+                <img src="assets/images/i6.jpg.webp" alt="">
+                <img src="assets/images/i7.jpg.webp" alt="">
+                <img src="assets/images/i8.jpg.webp" alt="">
+              </div>
+            </div>
+            <div class="follow">
+              <h4>Follow Us </h4>
+              <p>Let us be social</p>
+              <div class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-dribbble"></i>
+                <i class="fa-brands fa-behance"></i>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">Copyright ©2024 All rights reserved | This template is made with  by <span style="color: #ffba00;">Colorlib</span></p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

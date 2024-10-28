@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/shoppingCart.css" />
+
+    <title>Karma</title>
+</head>
+
+<body>
+    <header class="sticky-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="logo navbar-brand" href="index.html"><img src="assets/images/logo.png.webp" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center ms-auto">
+                        <li class="nav-item">
+                            <a class="home nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Shop</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="shopCategory.html">Shop Category</a></li>
+                                <li><a class="dropdown-item" href="#">Product Details</a></li>
+                                <li><a class="dropdown-item" href="#">Shopping Cart</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Blog</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                <li><a class="dropdown-item" href="blogDetails.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Pages</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </li>
+                        <li class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="full">
+        <main>
+            <main>
+                <section id="bg">
+                    <div class="banner_txt">
+                        <h1>Shopping Cart</h1>
+                        <a href="index.html">Home</a> - <a href="">Cart</a>
+                    </div>
+                </section>
+
+                <section id="table">
+                    <div class="container my-5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-name d-flex product align-items-center">
+                                        <img src="assets/images/cart.jpg.webp" alt="Product" class="mr-3"
+                                            style="width: 150px;">
+                                        <div>Minimalistic shop for multipurpose use</div>
+                                    </td>
+                                    <td class="price">$360.00</td>
+                                    <td class="quantity">
+                                        <input type="number" class="form-control" value="1" min="1">
+                                    </td>
+                                    <td class="total-price">$720.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-name d-flex product align-items-center">
+                                        <img src="assets/images/cart.jpg.webp" alt="Product" class="mr-3"
+                                            style="width: 150px;">
+                                        <div>Minimalistic shop for multipurpose use</div>
+                                    </td>
+                                    <td class="price">$360.00</td>
+                                    <td class="quantity">
+                                        <input type="number" class="form-control" value="1" min="1">
+                                    </td>
+                                    <td class="total-price">$720.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="product-name d-flex product align-items-center">
+                                        <img src="assets/images/cart.jpg.webp" alt="Product" class="mr-3"
+                                            style="width: 150px;">
+                                        <div>Minimalistic shop for multipurpose use</div>
+                                    </td>
+                                    <td class="price">$360.00</td>
+                                    <td class="quantity">
+                                        <input type="number" class="form-control" value="1" min="1">
+                                    </td>
+                                    <td class="total-price">$720.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="buttons d-flex justify-content-between mb-4">
+                            <button class="update">UPDATE CART</button>
+
+                            <div class="input-button">
+                                <input type="text" class="coupon-code" placeholder="Coupon Code">
+                                <div class="input-groupp">
+                                    <button class="apply">APPLY</button>
+                                    <button class="close">CLOSE COUPON</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subtotal d-flex justify-content-end gap-5 border-top pt-3 mb-4">
+                            <div class="total">
+                                <h5>Subtotal</h5>
+                                <h5>$2160.00</h5>
+                            </div>
+
+                        </div>
+
+                        <div class="shipping border-top pt-3 mb-4">
+
+                            <div class="form-check">
+                                <h5>Shipping</h5>
+                                <label class="form-check-label" for="flatRate5">Flat Rate: $5.00</label>
+                                <input type="radio" class="form-check-input" name="shipping" id="flatRate5"
+                                    value="Flat Rate: $5.00">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="freeShipping">Free Shipping</label>
+                                <input type="radio" class="form-check-input" name="shipping" id="freeShipping"
+                                    value="Free Shipping">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="flatRate10">Flat Rate: $10.00</label>
+                                <input type="radio" class="form-check-input" name="shipping" id="flatRate10"
+                                    value="Flat Rate: $10.00">
+
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="localDelivery">Local Delivery: $2.00</label>
+                                <input type="radio" class="form-check-input" name="shipping" id="localDelivery"
+                                    value="Local Delivery: $2.00" checked>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-4 calculate">
+                            <label for="countrySelect">Calculate Shipping</label>
+                            <select class="select form-control" id="countrySelect">
+                                <option>Bangladesh</option>
+                                <option>India</option>
+                                <option>Pakistan</option>
+                            </select>
+                            <select class="select form-control" id="countrySelect">
+                                <option>Select a State</option>
+                                <option>Select a State</option>
+                                <option>Select a State</option>
+                            </select>
+                            <input type="text" class="zip" placeholder="Postcode/Zipcode">
+                            <button class="update-details">UPDATE DETAILS</button>
+                        </div>
+                        <div class="end d-flex justify-content-end gap-5 border-top pt-3 mb-4">
+                            <div class="end-button">
+                                <button> Continue Shopping</button>
+                                <button>Proceed to checkout </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer>
+                <div class="container">
+                  <div class="footer">
+                    <div class="about">
+                      <h4>About Us</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    </div>
+                    <div class="news">
+                      <h4>Newsletter</h4>
+                      <p>Stay update with our latest</p>
+                      <div class="input">
+                        <input type="email" placeholder="Enter Email">
+                        <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                      </div>
+                    </div>
+                    <div class="instagram">
+                      <h4>Instragram Feed </h4>
+                      <div class="insta-img">
+                        <img src="assets/images/i1.jpg.webp" alt="">
+                        <img src="assets/images/i2.jpg.webp" alt="">
+                        <img src="assets/images/i3.jpg.webp" alt="">
+                        <img src="assets/images/i4.jpg.webp" alt="">
+                        <img src="assets/images/i5.jpg.webp" alt="">
+                        <img src="assets/images/i6.jpg.webp" alt="">
+                        <img src="assets/images/i7.jpg.webp" alt="">
+                        <img src="assets/images/i8.jpg.webp" alt="">
+                      </div>
+                    </div>
+                    <div class="follow">
+                      <h4>Follow Us </h4>
+                      <p>Let us be social</p>
+                      <div class="social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-dribbble"></i>
+                        <i class="fa-brands fa-behance"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="copyright">Copyright ©2024 All rights reserved | This template is made with  by <span style="color: #ffba00;">Colorlib</span></p>
+                </div>
+              </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

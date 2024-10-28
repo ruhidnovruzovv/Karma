@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 1550px;
+}
+
+.container {
+    width: 70%;
+    text-align: justify;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 78%;
+    margin: 0 auto;
+    background-color: white;
+    transition: width 0.3s, margin 0.3s;
+}
+
+.sticky-header.sticky {
+    width: 100%;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    margin: 30px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar i {
+    color: #222222d5;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-right: 10px;
+}
+
+.home {
+    color: #ffba00 !important;
+}
+
+.navbar ul li a {
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffba00;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navbar-nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    border-radius: 0 !important;
+    border: none !important;
+    transition: all 0.5s ease !important;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    border: 0.1px solid #e4e4e4;
+}
+
+.dropdown-menu li:hover {
+    background-color: #ffba00 !important;
+}
+
+.dropdown-menu li a {
+    transition: all 0.3s ease !important;
+    font-weight: 600 !important;
+
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ffba00 !important;
+    color: white !important;
+}
+
+.navbar-nav .dropdown-item {
+    color: #ffba00;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #FF4500;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.full {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#main {
+    margin-top: 100px;
+}
+
+#bg {
+    width: 100%;
+    background-image: url(../images/common-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.banner_txt {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    color: white;
+}
+
+.banner_txt a {
+    color: white;
+    text-decoration: none;
+}
+
+.banner_txt h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-login {
+    display: flex;
+    width: 70%;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 80px auto;
+    height: 593px;
+    justify-content: space-between;
+  }
+  
+  .left {
+    width: 50%;
+    background: url(../images/login.jpg.webp) no-repeat center center/cover;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .overlay h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .overlay p {
+    font-size: 14px;
+    margin-bottom: 20px;
+
+  }
+  
+  .create-account {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .options{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+ 
+  
+  .right {
+    width: 45%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  
+  .right h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .options label {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .login-button {
+    padding: 10px;
+    font-size: 14px;
+    background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+ 
+  .forgot-password {
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    color: #555;
+  }
+
+
+
+
+footer {
+    position: relative;
+    top: 100%;
+    height: 477px;
+    width: 100%;
+    background-color: #222222;
+    margin-top: 100px;
+}
+
+.footer {
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.footer h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 27px;
+}
+
+.footer p {
+    color: #a9a9a9;
+}
+ .news p{
+    width: 255px;
+}
+
+.about p{
+    width: 90%;
+    
+}
+
+
+.instagram{
+    width: 25;
+}
+
+.insta-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.insta-img img{
+    width: 22%;
+}
+
+.input {
+    position: relative;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: white;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.input button {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    border: none;
+    padding: 0 15px;
+    background-image: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+    color: white;
+}
+
+.social i {
+    transition: all 0.3s ease;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: #ff9c4b;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 80px;
+    color: #a9a9a9;
+}
